@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="764.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.pos.controller.LoginFormController">
+    <children>
+        <TextField fx:id="usernameField" layoutX="479.0" layoutY="91.0" prefHeight="62.0" prefWidth="444.0" promptText="Username" />
+        <PasswordField fx:id="passwordField" layoutX="479.0" layoutY="175.0" prefHeight="62.0" prefWidth="444.0" promptText="Password" />
+        <GridPane layoutX="485.0" layoutY="286.0" prefHeight="307.0" prefWidth="444.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="73.0" prefWidth="111.0" style="-fx-font-size: 25px;" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="77.0" prefWidth="111.0" style="-fx-font-size: 25px;" text="4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="76.0" prefWidth="111.0" style="-fx-font-size: 25px;" text="7" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="77.0" prefWidth="111.0" style="-fx-font-size: 25px;" text="6" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="77.0" prefWidth="111.0" style="-fx-font-size: 25px;" text="2" GridPane.columnIndex="2" />
+
+
+                <Button mnemonicParsing="false" onAction="#clearNumericInput" prefHeight="64.0" prefWidth="111.0" style="-fx-font-size: 25px;" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+                <Button onAction="#handleLogin" prefHeight="60.0" prefWidth="111.0" style="-fx-font-size: 25px;" text="Login" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="66.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="1" GridPane.columnIndex="1" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="60.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="3" GridPane.columnIndex="3" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="60.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="5" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="60.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="8" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="87.0" prefWidth="153.0" style="-fx-font-size: 25px;" text="A" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="61.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="9" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="60.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="B" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="59.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="C" GridPane.rowIndex="2" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="60.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="D" GridPane.rowIndex="3" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="59.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="*" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button mnemonicParsing="false" onAction="#handleNumericInput" prefHeight="61.0" prefWidth="110.0" style="-fx-font-size: 25px;" text="#" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+      <ImageView fitHeight="766.0" fitWidth="460.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../java/com/company/pos/assets/Login_Image.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="62.0" layoutY="704.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1024.0" />
+    </children>
+</AnchorPane>
